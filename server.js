@@ -25,5 +25,9 @@ app.get('/my', middleWare, async (req,res) => {
     res.send("Hello Its a MiddleWare ")
 })
 
+app.get('/', async (req,res) => {
+    res.send('MY Backend Is Live! Go to Postman Check API EndPoints Which are mentioned in the Readme File')
+})
+
 
 app.listen(port, () => console.log(`Server Started on ${port}`));
